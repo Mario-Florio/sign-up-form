@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.background {
+    display: flex;
+    background: url(background.jpg) center;
+    flex: 1.25;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.logo-banner {
+    display: flex;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.395);
+    font-family: 'Norse-bold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    height: 100px;
+    width: 100%;
+    padding-top: 10px;
+    margin-bottom: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-credit {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    color: white;
+    margin-bottom: -280px;
+}
+
+.content {
+    display: flex;
+    height: 100%;
+    flex: 1.75;
+    flex-direction: column;
+}
+
+.head {
+    background-color: rgb(244, 244, 244);
+    color: rgb(40, 40, 40);
+    flex: 1.05;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.05rem;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+#head-content {
+    margin-top: 100px;
+    max-width: 500px;
+}
+
+.form {
+    flex: 1.95;
+}
+
+.form-box {
+    color: dimgray;
+    padding: 30px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 7px rgba(0,0,0,0.2);
+}
+
+.label-align {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    margin-bottom: 7px;
+}
+
+.input-align {
+    display: flex;
+}
+
+input, label {
+    margin-left: 30px;
+}
+
+.footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+button {
+    background-color: darkolivegreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 11.5px;
+    font-weight: bold;
+    padding: 7px 30px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 3px 7px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    transition-duration: 0.4s;
+    background-color: rgb(108, 129, 73);
+}
+
+
+.footer-text {
+    font-size: 13px;
+}
+
+#log-in {
+    text-decoration: none;
+    color: darkolivegreen;
+}
