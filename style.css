@@ -4,17 +4,18 @@
 
 body {
     display: flex;
+    flex-wrap: wrap;
     height: 100vh;
     margin: 0;
 }
 
+/* Background Half of Page */
 .background {
     display: flex;
     background: url(background.jpg) center;
     flex: 1.25;
-    height: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-size: cover;
     flex-direction: column;
 }
@@ -28,18 +29,22 @@ body {
     height: 100px;
     width: 100%;
     padding-top: 10px;
-    margin-bottom: 300px;
+    margin-top: 153px;
     justify-content: center;
     align-items: center;
+}
+
+img {/* Odin Logo (not background image) */
+    height: 75px;
 }
 
 .photo-credit {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 12px;
     color: white;
-    margin-bottom: -280px;
 }
 
+/* Form half of page */
 .content {
     display: flex;
     height: 100%;
@@ -47,23 +52,29 @@ body {
     flex-direction: column;
 }
 
+/* Top third of "Form half" */
 .head {
+    display: flex;
     background-color: rgb(244, 244, 244);
     color: rgb(40, 40, 40);
-    flex: 1.05;
+    flex: 1;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.05rem;
     font-weight: bold;
     padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    justify-content: end;
+    flex-direction: column;
 }
 
 #head-content {
-    margin-top: 100px;
     max-width: 500px;
 }
 
+/* Actual Form */
 .form {
-    flex: 1.95;
+    flex: 2;
 }
 
 .form-box {
@@ -79,8 +90,8 @@ body {
 .label-align {
     display: flex;
     flex-direction: column;
-    max-width: 40%;
-    margin-bottom: 7px;
+    max-width: 175px;
+    height: 53px
 }
 
 .input-align {
@@ -91,6 +102,17 @@ input, label {
     margin-left: 30px;
 }
 
+input:focus {
+    box-shadow: 0px 3px 7px rgba(0,0,0,0.2);
+}
+
+.error {/* Handles error messages for form */
+    width: 70%;
+    margin-left: 30px;
+}
+
+/* Bottom third of "Form half" of page 
+(includes "Create Account" button) */
 .footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 20px;
@@ -116,7 +138,6 @@ button:hover {
     transition-duration: 0.4s;
     background-color: rgb(108, 129, 73);
 }
-
 
 .footer-text {
     font-size: 13px;
